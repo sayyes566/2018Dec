@@ -1,3 +1,4 @@
+COPY right @Daxia
 # daxia
 
 ## Project setup
