@@ -1,17 +1,14 @@
 <template>
-<b-navbar toggleable="md" type="dark" fixed="top" variant="dark">
+<b-navbar toggleable="md" type="light" fixed="bottom" >
 
   <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
 
-  <b-navbar-brand href="#" v-b-popover.hover="'鍵盤大俠們，是時候站上高峰決鬥吧！ '" 
-  title="你是大俠">大俠 Daxia</b-navbar-brand>
 
   <b-collapse is-nav id="nav_collapse">
 
     <b-navbar-nav>
       <b-nav-item href="#discuss" >討論</b-nav-item>
-      <b-nav-item ><b-link :to="{ path: 'home' }" router-tag="li" active-class="router-link-active">Home</b-link>
-</b-nav-item>
+      <b-nav-item href="#task">任務</b-nav-item>
       <b-nav-item href="#" disabled>名人榜</b-nav-item>
     </b-navbar-nav>
 
@@ -22,11 +19,7 @@
         <b-form-input size="sm" class="mr-sm-2" type="text" placeholder="Search"/>
         <b-button size="sm" class="my-2 my-sm-0" type="submit">Search</b-button>
       </b-nav-form-->
-       <b-navbar-nav>
-         <b-nav-item>
-          <font-awesome-icon icon="marker" />
-         </b-nav-item>
-       </b-navbar-nav>
+
       <!--b-nav-item-dropdown text="Lang" right>
         <b-dropdown-item href="#">EN</b-dropdown-item>
         <b-dropdown-item href="#">ES</b-dropdown-item>
@@ -50,7 +43,7 @@
 <!-- navbar-1.vue -->
 <script>
 export default {
-  name: 'Main'
+  name: 'Footer'
 }
 </script>
 

@@ -9,10 +9,11 @@
   <b-collapse is-nav id="nav_collapse">
 
     <b-navbar-nav>
-      <b-nav-item href="#discuss" >討論</b-nav-item>
-      <b-nav-item ><b-link :to="{ path: 'home' }" router-tag="li" active-class="router-link-active">Home</b-link>
+      
+      <b-nav-item ><b-link :to="{ path: 'home' }" router-tag="li" active-class="router-link-active">選單</b-link>
 </b-nav-item>
-      <b-nav-item href="#" disabled>名人榜</b-nav-item>
+      <b-nav-item ><b-link :to="{ path: 'login' }" router-tag="li" active-class="router-link-active">登入</b-link>
+</b-nav-item>
     </b-navbar-nav>
 
     <!-- Right aligned nav items -->
@@ -22,11 +23,11 @@
         <b-form-input size="sm" class="mr-sm-2" type="text" placeholder="Search"/>
         <b-button size="sm" class="my-2 my-sm-0" type="submit">Search</b-button>
       </b-nav-form-->
-       <b-navbar-nav>
+       <!--b-navbar-nav>
          <b-nav-item>
           <font-awesome-icon icon="marker" />
          </b-nav-item>
-       </b-navbar-nav>
+       </b-navbar-nav-->
       <!--b-nav-item-dropdown text="Lang" right>
         <b-dropdown-item href="#">EN</b-dropdown-item>
         <b-dropdown-item href="#">ES</b-dropdown-item>
@@ -50,7 +51,7 @@
 <!-- navbar-1.vue -->
 <script>
 export default {
-  name: 'Main'
+  name: 'Navbar'
 }
 </script>
 

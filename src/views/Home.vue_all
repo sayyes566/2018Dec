@@ -1,0 +1,33 @@
+<template>
+  <div class="home">
+    <Main />
+    <Toolbar />
+    <Nav />
+    <img alt="Vue logo" src="../assets/logo.png">
+    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Footer/>
+  </div>
+</template>
+
+<script>
+// @ is an alias to /src
+import HelloWorld from '@/components/HelloWorld.vue'
+import Main from './base/Main.vue'
+import Footer from './base/Footer.vue'
+import Nav from './base/Nav.vue'
+import Badge from './base/Badge.vue'
+import Toolbar from './base/Toolbar.vue'
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
+export default {
+  name: 'home',
+  components: {
+    Main,
+    Badge,
+    Toolbar,
+    Nav,
+    HelloWorld,
+    Footer
+  }
+}
+</script>
